@@ -1,0 +1,34 @@
+.data-container {
+    margin: 20px;
+}
+
+.data-heading {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+}
+
+.data-table td,
+.data-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.data-table tr:hover {
+    background-color: #f1f1f1;
+}
