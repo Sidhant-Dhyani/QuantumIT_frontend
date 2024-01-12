@@ -4,8 +4,10 @@ import { BASE_URL } from '../../Config'
 import { useDispatch } from 'react-redux'
 import { login } from '../../redux/authSlice'
 import './Register.css'
+import { useNavigate } from 'react-router-dom'
 
 const Register = () => {
+    const navigate = useNavigate();
     const dispatch = useDispatch();
     const [formData, setFormData] = useState({
         name: '',
@@ -31,6 +33,7 @@ const Register = () => {
                 localStorage.setItem('token', token);
                 dispatch(login(token));
                 console.log('User created successfully');
+                navigate('/');
             }
         } catch (error) {
             console.log('Error in submitting form: ', error);
